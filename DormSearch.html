@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+<title>MMA BOYS DORM SEARCH</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid rgb(7, 11, 66);
+  margin-bottom: 12px;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 1px solid rgb(135, 15, 6);
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 6px;
+  text-decoration: none;
+  font-size: 15px;
+  color: rgb(5, 2, 19);
+  display: block
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: rgb(241, 243, 134);
+}
+
+
+</style>
+<body class="w3-light-grey">
+
+<!-- Top container -->
+<div class="w3-bar w3-top w3-green w3-large" style="z-index:4">
+  <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey" onclick="w3_open();"><i class="fa fa-bars"></i>Menu</button>
+  <span class="w3-bar-item w3-center"><img src="mma_logo.png" alt="MMA logo" width="" height="35px" style="margin-left: 5px;" >
+    MINDANAO MISSION ACADEMY-BOYS DORMITORY SY:2024-2025</a>
+  </span>
+</div>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-dark-grey w3-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container w3-row">
+    <p style="text-align: center;"><a href="https://wmaaozamiz.github.io/home/"><img src="mma_logo.png" width="150"></a></p>
+    <h2 style="text-align: center;">SY: 2024-2025</h2>
+    
+  </div>
+  <hr>
+  <div class="w3-container">
+  
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
+    <a href="dashboard.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-dashboard fa-fw"></i>Main</a>
+    <a href="DormSearch.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-users fa-fw"></i>Students</a>
+    <!--<a href="https://wmaaozamiz.github.io/SA_Election2021/proclaim.html" target="_blank" class="w3-bar-item w3-button w3-padding">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-users"></i>Student Association</a>-->
+    <a href="moduletracker.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-list-alt fa-fw"></i>Cleanliness Chart</a>
+    <a href="grades.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-map-o fa-fw"></i>Gatepass</a>
+    
+    <!--
+    <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bullseye fa-fw"></i>  Geo</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-diamond fa-fw"></i>  Orders</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bell fa-fw"></i>  News</a>
+    <a href="" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bank fa-fw"></i> Traffic</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-history fa-fw"></i>  History</a>
+    
+    <a href="index.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-power-off"></i> Log Out</a><br><br>-->
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px;margin-top:43px;">
+
+  <!-- Header -->
+  <header class="w3-container" style="padding-top:22px">
+    <h5><b><i class="fa fa-users"></i><strong>MMA BOYS DORM OCCUPANTS LISTS</strong></b></h5>
+  </header>
+  <!--End of Header-->
+
+  <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for student names..." title="Type in a name">
+<ul id="myUL">
+  
+  
+  
+    <!--Grade 7 Males//-->
+    <li><a href="#">	Asuncion, Kirnelle Rajs Sombilon	---	Grade 7(Emerald)	</a></li>
+    <li><a href="#">	Baculao, Jared Xian Asahid	---	Grade 7(Emerald)	</a></li>
+    <li><a href="#">	Gevero, Jens Jeevan Dimpas	---	Grade 7(Emerald)	</a></li>
+    <li><a href="#">	Tumulak, Jovet Baliña	---	Grade 7(Emerald)	</a></li>
+    <li><a href="#">	Alumbro, Jeff Laurence Demerin	---	Grade 7(Onyx)	</a></li>
+    <li><a href="#">	Armada, Allard Benjamin Charles David Bazar	---	Grade 7(Onyx)	</a></li>
+    <li><a href="#">	Cardente, Elvin Johndel	---	Grade 7(Onyx)	</a></li>
+    <li><a href="#">	Micabalo, Nathan Gabriel Antig	---	Grade 7(Onyx)	</a></li>
+    <li><a href="#">	Pansacala, Jefferson Yanis Salvado	---	Grade 7(Onyx)	</a></li>
+    <li><a href="#">	Amantiad, Jacob Kurt Graciano	---	Grade 7(Sapphire)	</a></li>
+    <li><a href="#">	Amista, Sean Theodore Salvani	---	Grade 7(Sapphire)	</a></li>
+    <li><a href="#">	Dangatao, Xiann	---	Grade 7(Sapphire)	</a></li>
+    <li><a href="#">	Itable, Kent Andrew Pagunsan	---	Grade 7(Sapphire)	</a></li>
+    <li><a href="#">	Lagmay, Harrish Nove Macasling	---	Grade 7(Sapphire)	</a></li>
+    <li><a href="#">	Quilog, Wezley Mar Oclarit	---	Grade 7(Sapphire)	</a></li>
+    <li><a href="#">	Sajulga, Rvyn Glynn Ampil	---	Grade 7(Sapphire)	</a></li>
+    <li><a href="#">	Dumancas, Mike Cederic Baslot	---	Grade 7(Spinel)	</a></li>
+    <li><a href="#">	Gravino, Samuel Marcelo Palumar	---	Grade 7(Spinel)	</a></li>
+    <li><a href="#">	Kalaw, John Enouk Baroman	---	Grade 7(Spinel)	</a></li>
+    <li><a href="#">	Latcha, Austin Aayan Rivera	---	Grade 7(Spinel)	</a></li>
+    <li><a href="#">	Parreño, Sean Palis	---	Grade 7(Spinel)	</a></li>
+    <li><a href="#">	Patalinghug, Kian Lee Jambongana	---	Grade 7(Spinel)	</a></li>
+    <li><a href="#">	Roa, Joshua Roman Calapine	---	Grade 7(Spinel)	</a></li>
+    <li><a href="#">	Lagata, Raz-Niel Tolentino	---	Grade 8(Amethyst)	</a></li>
+    <li><a href="#">	Nietes, Keith Rhonzel Piocnacia	---	Grade 8(Amethyst)	</a></li>
+    <li><a href="#">	Pescadero, Charzen Jay Sullano	---	Grade 8(Amethyst)	</a></li>
+    <li><a href="#">	Talip, Carlisle Yosseff Colegado	---	Grade 8(Amethyst)	</a></li>
+    <li><a href="#">	Colegado, Lester Ryley Salico	---	Grade 8(Chrysolite)	</a></li>
+    <li><a href="#">	Indino, Mico Gabriel Viloria	---	Grade 8(Chrysolite)	</a></li>
+    <li><a href="#">	Tanginan, Clyde Lee Rubico	---	Grade 8(Chrysolite)	</a></li>
+    <li><a href="#">	Vicente, Chad Adhrian Teves	---	Grade 8(Chrysolite)	</a></li>
+    <li><a href="#">	Anciado, Nhygel Kent Palamine	---	Grade 8(Garnet)	</a></li>
+    <li><a href="#">	Ellacer, Glenn Nathan Dominguez	---	Grade 8(Garnet)	</a></li>
+    <li><a href="#">	Enoferio, Elton John Egipto	---	Grade 8(Garnet)	</a></li>
+    <li><a href="#">	Mercader, Jesreel Jr. Lagra	---	Grade 8(Garnet)	</a></li>
+    <li><a href="#">	Naquila, Luegie	---	Grade 8(Garnet)	</a></li>
+    <li><a href="#">	Arlalejo, Arkin	---	Grade 9(Beryl)	</a></li>
+    <li><a href="#">	Asombrado, Joesil Jr. Villarino	---	Grade 9(Beryl)	</a></li>
+    <li><a href="#">	Borromeo, Jacob Coquilla	---	Grade 9(Beryl)	</a></li>
+    <li><a href="#">	Huilar, Ashtonn Reece To-Ong	---	Grade 9(Beryl)	</a></li>
+    <li><a href="#">	Quilog, Adrienne Cardente	---	Grade 9(Beryl)	</a></li>
+    <li><a href="#">	Barsobia, Kyle Richards Generato	---	Grade 9(Beryl)	</a></li>
+    <li><a href="#">	Borres, Gilbert	---	Grade 9(Carnelian)	</a></li>
+    <li><a href="#">	Edrolin, Brianne Kyle Omboy	---	Grade 9(Carnelian)	</a></li>
+    <li><a href="#">	Pama, Geoz Llagas	---	Grade 9(Carnelian)	</a></li>
+    <li><a href="#">	Tubasis, Jose Divmer Aparece	---	Grade 9(Carnelian)	</a></li>
+    <li><a href="#">	Amista, June Dale Salvani	---	Grade 9(Sardonyx)	</a></li>
+    <li><a href="#">	Amista, Narvin Cor Philip Pilon	---	Grade 9(Sardonyx)	</a></li>
+    <li><a href="#">	Ferraren, Earl Dave Sultan	---	Grade 9(Sardonyx)	</a></li>
+    <li><a href="#">	Ferraren, Prince Norman Bodiongan	---	Grade 9(Sardonyx)	</a></li>
+    <li><a href="#">	Janubas, Phillipe Gabriel Marba	---	Grade 9(Sardonyx)	</a></li>
+    <li><a href="#">	Labag, Wandill Sam Modillas	---	Grade 9(Sardonyx)	</a></li>
+    <li><a href="#">	Longakit, Kurt Vincent Bagongon	---	Grade 9(Sardonyx)	</a></li>
+    <li><a href="#">	Mejos, Ryden Byrne Osorio	---	"Grade 9(Sardonyx)	"	</a></li>
+    <li><a href="#">	Alburo, Nathaniel Salvador	---	Grade 10(Aquamarine)	</a></li>
+    <li><a href="#">	Bacus, Jun Bryant Daquiado	---	Grade 10(Aquamarine)	</a></li>
+    <li><a href="#">	Corporal, Hamzy Amit	---	Grade 10(Aquamarine)	</a></li>
+    <li><a href="#">	Itable, Brenn Diehl Mico Pagunsan	---	Grade 10(Aquamarine)	</a></li>
+    <li><a href="#">	Ledesma, Gabriel Sky	---	Grade 10(Aquamarine)	</a></li>
+    <li><a href="#">	Ordoña, Zach Lambatan	---	"Grade 10(Aquamarine)	"	</a></li>
+    <li><a href="#">	Reyes, Andre Bjorn Palermo	---	Grade 10(Aquamarine)	</a></li>
+    <li><a href="#">	Tejada, James Patrick Cabardo	---	Grade 10(Aquamarine)	</a></li>
+    <li><a href="#">	Agan, Mark Angelo Leonardo	---	Grade 10(Chalcedony)	</a></li>
+    <li><a href="#">	Batoon, Dave Yane	---	Grade 10(Chalcedony)	</a></li>
+    <li><a href="#">	Calibo, Zyan Kyle Cedeño	---	Grade 10(Chalcedony)	</a></li>
+    <li><a href="#">	Colegado, Johnzzy Drey	---	Grade 10(Chalcedony)	</a></li>
+    <li><a href="#">	Erigbuagas, Euan Tuusan	---	Grade 10(Chalcedony)	</a></li>
+    <li><a href="#">	Laurete, Troy Xander Docto	---	Grade 10(Chalcedony)	</a></li>
+    <li><a href="#">	Natividad, Fredelance Cubelo	---	Grade 10(Chalcedony)	</a></li>
+    <li><a href="#">	Tepait, Danise John	---	Grade 10(Chalcedony)	</a></li>
+    <li><a href="#">	Baño, Adison Benze Galay	---	Grade 10(Jacinth)	</a></li>
+    <li><a href="#">	Batanga, Jim Lloyd Agapay	---	Grade 10(Jacinth)	</a></li>
+    <li><a href="#">	Dumancas, Miguel Sham Baslot	---	Grade 10(Jacinth)	</a></li>
+    <li><a href="#">	Laureano, Luis Miguel Tolentino	---	Grade 10(Jacinth)	</a></li>
+    <li><a href="#">	Luspo, Seandrick Cordero	---	Grade 10(Jacinth)	</a></li>
+    <li><a href="#">	Sabellina, Mikael Dino Abing	---	Grade 10(Jacinth)	</a></li>
+    <li><a href="#">	Salcedo, Hoshea Louis Arat	---	Grade 10(Jacinth)	</a></li>
+    <li><a href="#">	Palapar, Tracy Jr. Hindoy	---	Grade 11(ABM Ruby)	</a></li>
+    <li><a href="#">	Sitjar, John Mark Sultan	---	Grade 11(ABM Ruby)	</a></li>
+    <li><a href="#">	Vargas, Jurgen Dan Dacu	---	Grade 11(ABM Ruby)	</a></li>
+    <li><a href="#">	Bation, Al James Jovera	---	Grade 11(HUMSS - Topaz)	</a></li>
+    <li><a href="#">	Lascuña, Kaiser Jireh Mejos	---	Grade 11(HUMSS - Topaz)	</a></li>
+    <li><a href="#">	Ral, Don Angelo Villalobos	---	Grade 11(HUMSS - Topaz)	</a></li>
+    <li><a href="#">	Aligabo, Reemar Jaymz Mann Bednedicto	---	Grade 11(STEM - Citrine)	</a></li>
+    <li><a href="#">	Montejo, Aikhen	---	Grade 11(STEM - Citrine)	</a></li>
+    <li><a href="#">	Acenas, Eldrex Den Catalan	---	Grade 11(STEM - Tanzanite)	</a></li>
+    <li><a href="#">	Asuncion, Saergent Kfir Sombilon	---	Grade 11(STEM - Tanzanite)	</a></li>
+    <li><a href="#">	Bias, Johnathan Bryant Paler	---	"Grade 11(STEM - Tanzanite)	"	</a></li>
+    <li><a href="#">	Cabahug, Don Floreal Dojeno	---	Grade 11(STEM - Tanzanite)	</a></li>
+    <li><a href="#">	Salarda, Wilhelm Bruce Maravillas	---	Grade 11(STEM - Tanzanite)	</a></li>
+    <li><a href="#">	Ares, Emman Angelo	---	Grade 11(STEM Hyacinth)	</a></li>
+    <li><a href="#">	Bacabis, John Brian Turtoza	---	Grade 11(STEM Hyacinth)	</a></li>
+    <li><a href="#">	Buenvenida, Ron Milo Canton	---	Grade 11(STEM Hyacinth)	</a></li>
+    <li><a href="#">	Cajeles, Carlos Selwayne Vicente	---	Grade 11(STEM Hyacinth)	</a></li>
+    <li><a href="#">	Nietes, Godfrey Adan	---	Grade 11(STEM Pearl)	</a></li>
+    <li><a href="#">	Suyman, Carl Aljade Daydora	---	Grade 11(STEM Hyacinth)	</a></li>
+    <li><a href="#">	Cajella, Dwight Austin Pia	---	Grade 11(STEM Opal)	</a></li>
+    <li><a href="#">	Garcia, Prince Anthony Uayan	---	Grade 11(STEM Opal)	</a></li>
+    <li><a href="#">	Hindoy, Reneir Carlo Martinez	---	Grade 11(STEM Opal)	</a></li>
+    <li><a href="#">	Nalzaro, Klent Joshua Pescadero	---	Grade 11(STEM Opal)	</a></li>
+    <li><a href="#">	Ortega, Mark Franciz Bataican	---	Grade 11(STEM Opal)	</a></li>
+    <li><a href="#">	Tiongson, Eirik Kynan Valdellon	---	Grade 11(STEM Opal)	</a></li>
+    <li><a href="#">	Angas, Gerant Empil	---	Grade 11(STEM Pearl)	</a></li>
+    <li><a href="#">	Cardeinte, Janisson Kim Albaran	---	Grade 11(STEM Pearl)	</a></li>
+    <li><a href="#">	Nietes, Kim Ryan Papellero	---	Grade 11(STEM Pearl)	</a></li>
+    <li><a href="#">	Roldan, Kimm Ryan Egot	---	Grade 11(STEM Pearl)	</a></li>
+    <li><a href="#">	Alberio, James Domenic Medalla	---	Grade 11(STEM Quartz)	</a></li>
+    <li><a href="#">	Paras, Drexenne Dingal	---	Grade 11(STEM Quartz)	</a></li>
+    <li><a href="#">	Perez, Prince Kohjen Amba	---	Grade 11(STEM Quartz)	</a></li>
+    <li><a href="#">	Sulima, Micho Comon	---	Grade 11(STEM Quartz)	</a></li>
+    <li><a href="#">	Tanguamos, Herald King Langcamon	---	Grade 11(STEM Quartz)	</a></li>
+    <li><a href="#">	Ybañez, Cyclone Jl Mejos	---	Grade 11(STEM Quartz)	</a></li>
+    <li><a href="#">	Mamaco, Sherwin Amal	---	Grade 12(HUMSS Diamond)	</a></li>
+    <li><a href="#">	Sayson, Jhon Harold	---	Grade 12(HUMSS Diamond)	</a></li>
+    <li><a href="#">	Asoy, Levi John Ponce	---	Grade 12(STEM - Cobalt)	</a></li>
+    <li><a href="#">	Cardente, Vaughnn Carl Andreu Recaña	---	Grade 12(STEM - Cobalt)	</a></li>
+    <li><a href="#">	Lomocso, Jonairex Ron Diel Arancon	---	Grade 12(STEM - Cobalt)	</a></li>
+    <li><a href="#">	Mirabueno, J-Hyde Eco	---	Grade 12(STEM - Cobalt)	</a></li>
+    <li><a href="#">	Nacua, Scott Lawrence Delos Reyes	---	Grade 12(STEM - Cobalt)	</a></li>
+    <li><a href="#">	Peñas, Hosea Dan Paul Nash Matias	---	Grade 12(STEM - Cobalt)	</a></li>
+    <li><a href="#">	Seraspe, Dwyne Carl Agonoy	---	Grade 12(STEM - Cobalt)	</a></li>
+    <li><a href="#">	Anacaya, Caleb Nathan Tunacao	---	Grade 12(STEM - Morion)	</a></li>
+    <li><a href="#">	Bucoy, Seth Gabriel Lim	---	Grade 12(STEM - Morion)	</a></li>
+    <li><a href="#">	Ortega, Vinzi Rataycan	---	Grade 12(STEM - Morion)	</a></li>
+    <li><a href="#">	Reyes, Ethan Sean Palermo	---	Grade 12(STEM - Morion)	</a></li>
+    <li><a href="#">	Vicente, Craig Hazleck Recopelacion	---	Grade 12(STEM - Morion)	</a></li>
+    <li><a href="#">	Valiente, Justine James Tan	---	Grade 12(STEM Jasper)	</a></li>
+    <li><a href="#">	Baculao, Mart Lesler Owen Clarete	---	Grade 12(STEM Obsidian)	</a></li>
+    <li><a href="#">	Emverda, Migil Jeremiah Alfeche	---	Grade 12(STEM Obsidian)	</a></li>
+    <li><a href="#">	Lagan, Joremie Hemoroz	---	Grade 12(STEM Obsidian)	</a></li>
+    <li><a href="#">	Pajaron, Excl Josh Corpus	---	Grade 12(STEM Obsidian)	</a></li>
+    <li><a href="#">	Rudinas, Galdryx Lei Medio	---	Grade 12(STEM Obsidian)	</a></li>
+    <li><a href="#">	Salico, Al Harvey Dator	---	"Grade 12(STEM Obsidian)	"	</a></li>
+    <li><a href="#">	Salico, Ryne	---	Grade 12(STEM Obsidian)	</a></li>
+    <li><a href="#">	Cajan, Jemrod Fhem Labag	---	Grade 12(STEM Turquoise)	</a></li>
+    <li><a href="#">	Cajella, Dwayne Timothy Pia	---	Grade 12(STEM Turquoise)	</a></li>
+    <li><a href="#">	Cuares, Mark Jay Paquilit	---	Grade 12(STEM Turquoise)	</a></li>
+    <li><a href="#">	Doting, Rollen Del Ylanan	---	Grade 12(STEM Turquoise)	</a></li>
+    <li><a href="#">	Sajulga, Klenjey Jr. Ampil	---	Grade 12(STEM Turquoise)	</a></li>
+    <li><a href="#">	Sombilon, Donylgionn Frigillano	---	Grade 12(STEM Turquoise)	</a></li>
+    <li><a href="#">	Vertudez, John Heart Ubalde	---	Grade 12(STEM Turquoise)	</a></li>
+    <li><a href="#">	Perez, Prince Kyle Amba	---	Grade 12(STEM Turquoise)	</a></li>
+    <li><a href="#">	Tomimbang, Girick Bernardo	---	Grade 12(STEM Turquoise)	</a></li>
+
+   <!--End of Student Lists-->
+</ul>
+
+<br>
+
+    <div class="w3-container">
+      <table class="w3-table w3-striped w3-bordered w3-border w3-hoverable w3-white">
+          <tr>
+            <th>Grade & Section</th>
+            <th>Adviser</th>
+            <th>Contact Number</th>
+          </tr>
+          <tr>
+            <td>Grade 7-Emerald</td>
+            <td><a href="#">View</a></td>
+            <td>09</a></td>
+          </tr>
+          <tr>
+            <td>Grade 7-Onyx</td>
+            <td><a href="#">View</a></td>
+            <td>09</a></td>
+          </tr>
+          <tr>
+            <td>Grade 7-Sapphire</td>
+            <td><a href="#">View</a></td>
+            <td>09</a></td>
+          </tr>
+          <tr>
+            <td>Grade 7-Spinel</td>
+            <td><a href="#">View</a></td>
+            <td>09</a></td>
+          </tr>
+          <tr>
+            <td>Grade 8-Kindness</td>
+            <td><a href="studentG8.html">View</a></td>
+            <td><a href="https://drive.google.com/uc?export=download&id=1BZoTWJvftYsSal7R_ovHz6iM_pQe6Xde">Download List (PDF)</a></td>
+          </tr>
+          <tr>
+            <td>Grade 9-Love</td>
+            <td><a href="studentG9.html">View</a></td>
+            <td><a href="https://drive.google.com/uc?export=download&id=1ByjIVwEz9wTPWb6DIjFOk-jsomi9I_ql">Download List (PDF)</a></td>
+          </tr>
+      </table>
+    </div>
+
+  
+  <br><!--
+  <p style="text-align: center;">
+    <button style="background-color: #f0f32a; font-size: larger;"><a href="https://wmaaozamiz.github.io/studentdata_entry/"><i class="fa fa-users"></i><strong>Student Data Entry & Tracker</strong></a></button>
+  </p>-->
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+    
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-4 w3-light-grey">
+    <h5><strong><i>Mindanao Mission Academy, Manticao, Misamis Oriental, Phils.</i></strong></h>
+  </footer>
+
+  <!-- End page content -->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+
+//Search bar function
+
+var UL = document.getElementById("myUL");
+// hilde the list by default
+UL.style.display = "none";
+
+var searchBox = document.getElementById("myInput");
+
+// show the list when the input receive focus
+searchBox.addEventListener("focus",  function(){
+    // UL.style.display = "block";
+});
+
+// hide the list when the input receive focus
+searchBox.addEventListener("blur", function(){
+    UL.style.display = "display";
+});
+
+
+function myFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    ul = document.getElementById("myUL");
+    filter = input.value.toUpperCase();
+    // if the input is empty hide the list
+    if(filter.trim().length < 1) {
+        ul.style.display = "none";
+        return false;
+    } else {
+        ul.style.display = "block";
+    }
+
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+
+        // This is when you want to find words that contain the search string
+     if (a.innerHTML.toUpperCase().indexOf(filter) > -1) { 
+        li[i].style.display = "";
+     } else {
+        li[i].style.display = "none";
+    } 
+
+    // This is when you want to find words that start the search string
+    /*if (a.innerHTML.toUpperCase().startsWith(filter)) {
+        li[i].style.display = "";
+    } else {
+        li[i].style.display = "none";
+    }*/
+    }
+}
+</script>
+
+<!-- Start of Async Drift Code 
+<script>
+"use strict";
+
+  !function() {
+    var t = window.driftt = window.drift = window.driftt || [];
+    if (!t.init) {
+      if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+      t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+      t.factory = function(e) {
+        return function() {
+          var n = Array.prototype.slice.call(arguments);
+          return n.unshift(e), t.push(n), t;
+        };
+      }, t.methods.forEach(function(e) {
+        t[e] = t.factory(e);
+      }), t.load = function(t) {
+        var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+        o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+        var i = document.getElementsByTagName("script")[0];
+        i.parentNode.insertBefore(o, i);
+      };
+    }
+  }();
+  drift.SNIPPET_VERSION = '0.3.1';
+  drift.load('5yw3winbyf6a');
+</script>
+<!-- End of Async Drift Code -->
+</body>
+</html>
